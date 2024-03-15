@@ -16,12 +16,15 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
 
   return (
     <nav>
-      <ul className="pagination justify-content-center p-5">
+      <ul className="pagination justify-content-center p-5 ">
         {pageNumbers.map((number) => (
-          <li key={number}>
+          <li key={number} className="bg-black">
             <button
-              className={`page-link ${activePage === number ? "active" : ""}`}
-              onClick={() => handlePageClick(number)}>
+              className={`page-link bg-black text-success ${
+                activePage === number ? "active" : ""
+              }`}
+              onClick={() => handlePageClick(number)}
+            >
               {number}
             </button>
           </li>

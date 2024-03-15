@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-primary">
+    <Navbar collapseOnSelect expand="lg" className="bg-black">
       <Container>
         <Link to="/">
           <Navbar.Brand className="text-light" as="span">
